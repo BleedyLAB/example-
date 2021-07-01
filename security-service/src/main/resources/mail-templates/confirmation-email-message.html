@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mail confirm message</title>
+</head>
+<body>
+<div>
+    <p>
+        Hello, <span th:text="${user_name}">user!</span> Welcome to ISIN, please visit next link:
+        <a th:href="${link}">activate</a>
+    </p>
+</div>
+</body>
+</html>

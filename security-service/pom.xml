@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>isin-security-starter</artifactId>
+        <groupId>ru.isin</groupId>
+        <version>1.0.34</version>
+    </parent>
+
+    <artifactId>security-service</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Modules -->
+        <dependency>
+            <groupId>ru.isin</groupId>
+            <artifactId>security-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>

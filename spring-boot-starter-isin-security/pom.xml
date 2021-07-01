@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>isin-security-starter</artifactId>
+        <groupId>ru.isin</groupId>
+        <version>1.0.34</version>
+    </parent>
+
+    <artifactId>spring-boot-starter-isin-security</artifactId>
+
+    <dependencies>
+        <!-- Modules -->
+        <dependency>
+            <groupId>ru.isin</groupId>
+            <artifactId>security-endpoint</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
